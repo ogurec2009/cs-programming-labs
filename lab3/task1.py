@@ -1,8 +1,4 @@
 document_code = input()
 
-category, year, doc_id = document_code.split("-")
-
-doc_id_backwards = doc_id[::-1]
-
-print(f"Категория: {category}\nГод: {year}\nНомер: {doc_id}\nОбратный номер: {doc_id_backwards}")
+print(f"Категория: {document_code[:3]}\nГод: {document_code[4:8]}\nНомер: {document_code[9:]}\nОбратный номер: {document_code[12:8:-1]}")
 
